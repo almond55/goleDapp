@@ -1,9 +1,9 @@
 pragma solidity ^0.5.4;
 import "./ERC20.sol";
 import "./ERC20Detailed.sol";
-import "./Owner.sol";
+import "./Authorized.sol";
 
-contract GoleToken is ERC20, ERC20Detailed, Owner {
+contract GoleToken is ERC20, ERC20Detailed, Authorized {
     using SafeMath for uint256;
 
     mapping (address => uint) private _frozenGole;
